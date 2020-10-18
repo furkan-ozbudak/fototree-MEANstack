@@ -1,0 +1,16 @@
+.search-form {
+  min-width: 150px;
+  width: 100%;
+}
+
+.search-full-width {
+  width: 90%;
+}
+/* .mat-input-element {
+  color: #fff;
+} */
+
+.search-form-container {
+  width: 80%;
+  margin: auto;
+}

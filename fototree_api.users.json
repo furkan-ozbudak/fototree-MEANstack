@@ -1,0 +1,204 @@
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5d8aa08770c3795ad4f55567"),
+	"bought_photos" : [ ],
+	"cart" : [ ],
+	"email" : "davidanderson@mum.edu",
+	"fname" : "David",
+	"lname" : "Anderson",
+	"password" : "$2b$12$avsQaQLJ1rzK9ezcr4M74e33daHUy9xwr.nwbzXz.k2YGOZFQBEam",
+	"payment_method" : {
+		"card_type" : "Visa",
+		"number" : "1234567890123456",
+		"secrete_no" : "321",
+		"expiry_date" : "04/21",
+		"name_on_the_card" : "David Anderson"
+	},
+	"profile_picture" : "http://drive.google.com/photos/3",
+	"uploaded_photos" : [
+		{
+			"url" : "aaditya-kalia-g6iin72dEI8-unsplash.jpg",
+			"title" : "jar",
+			"description" : "jar in the light effect",
+			"category" : "indoor",
+			"price" : 7,
+			"likes" : 19,
+			"comments" : [ ]
+		},
+		{
+			"url" : "alex-blajan-JL3702Xvk5c-unsplash.jpg",
+			"title" : "girl",
+			"description" : "girl with flowers",
+			"category" : "environment",
+			"price" : 23,
+			"likes" : 9,
+			"comments" : [ ]
+		},
+		{
+			"url" : "suhyeon-choi-G9XMLUAjETM-unsplash.jpg",
+			"title" : "three friends",
+			"description" : "three friends in landscape",
+			"category" : "improvising",
+			"price" : 6,
+			"likes" : 87,
+			"comments" : [ ]
+		}
+	]
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5d8a9ee670c3795ad4f55566"),
+	"bought_photos" : [ ],
+	"cart" : [ ],
+	"email" : "kevindreizer@mum.edu",
+	"fname" : "Kevin",
+	"lname" : "Dreizer",
+	"password" : "$2b$12$avsQaQLJ1rzK9ezcr4M74e33daHUy9xwr.nwbzXz.k2YGOZFQBEam",
+	"payment_method" : {
+		"card_type" : "Visa",
+		"number" : "1234567890123456",
+		"secrete_no" : "321",
+		"expiry_date" : "04/21",
+		"name_on_the_card" : "Kevin Dreizer"
+	},
+	"profile_picture" : "http://drive.google.com/photos/2",
+	"uploaded_photos" : [
+		{
+			"url" : "andy-chilton-yZLkK1XfyHg-unsplash.jpg",
+			"title" : "flower",
+			"description" : "white flower",
+			"category" : "environment",
+			"price" : 0,
+			"likes" : 5,
+			"comments" : [ ]
+		},
+		{
+			"url" : "florian-klauer-nptLmg6jqDo-unsplash.jpg",
+			"title" : "chair",
+			"description" : "white chair with balloons",
+			"category" : "indoor",
+			"price" : 13,
+			"likes" : 8,
+			"comments" : [ ]
+		},
+		{
+			"url" : "george-hiles-cKLr1zNnCzg-unsplash.jpg",
+			"title" : "animal",
+			"description" : "an interesting brown animal",
+			"category" : "environment",
+			"price" : 0,
+			"likes" : 19,
+			"comments" : [ ]
+		},
+		{
+			"url" : "karsten-wurth-karsten-wuerth-FYMvmVz3OQo-unsplash.jpg",
+			"title" : "mountain",
+			"description" : "beautiful mountains in the sunset",
+			"category" : "environment",
+			"price" : 3,
+			"likes" : 35,
+			"comments" : [ ]
+		},
+		{
+			"url" : "natasha-norton-uOnLsEqq--c-unsplash.jpg",
+			"title" : "lake",
+			"description" : "lake in the sunset",
+			"category" : "environment",
+			"price" : 6,
+			"likes" : 56,
+			"comments" : [ ]
+		},
+		{
+			"url" : "priscilla-du-preez-TuWVFTFdvNw-unsplash.jpg",
+			"title" : "flower",
+			"description" : "white flower",
+			"category" : "environment",
+			"price" : 20,
+			"likes" : 44,
+			"comments" : [ ]
+		},
+		{
+			"url" : "timelynx-WGYFmc32Xy8-unsplash.jpg",
+			"title" : "snow",
+			"description" : "village under mountain",
+			"category" : "environment",
+			"price" : 4,
+			"likes" : 63,
+			"comments" : [ ]
+		}
+	]
+},
+{
+	"__v" : NumberInt(0),
+	"_id" : ObjectId("5d8a8fad70c3795ad4f55565"),
+	"bought_photos" : [ ],
+	"cart" : [ ],
+	"email" : "johnpaul@mum.edu",
+	"fname" : "John",
+	"lname" : "Paul",
+	"password" : "$2b$12$avsQaQLJ1rzK9ezcr4M74e33daHUy9xwr.nwbzXz.k2YGOZFQBEam",
+	"payment_method" : {
+		"card_type" : "Visa",
+		"number" : "1234567890123456",
+		"secrete_no" : "321",
+		"expiry_date" : "04/21",
+		"name_on_the_card" : "John Paul"
+	},
+	"profile_picture" : "http://drive.google.com/photos/1",
+	"uploaded_photos" : [
+		{
+			"url" : "alexandra-dech-UrlJUjvbcac-unsplash.jpg",
+			"title" : "night landscape",
+			"description" : "My favorite",
+			"category" : "landscape",
+			"price" : 0,
+			"likes" : 25,
+			"comments" : [ ]
+		},
+		{
+			"url" : "alexandru-zdrobau-BGz8vO3pK8k-unsplash.jpg",
+			"title" : "sweet girl",
+			"description" : "nice portrait",
+			"category" : "portrait",
+			"price" : 5,
+			"likes" : 5,
+			"comments" : [ ]
+		},
+		{
+			"url" : "jakob-owens-7o8z3sK2k5s-unsplash.jpg",
+			"title" : "flower",
+			"description" : "sunny flower",
+			"category" : "environment",
+			"price" : 0,
+			"likes" : 10,
+			"comments" : [ ]
+		},
+		{
+			"url" : "jeff-king-bJHWJeiHfHc-unsplash.jpg",
+			"title" : "tree with sun",
+			"description" : "sunny tree",
+			"category" : "environment",
+			"price" : 7,
+			"likes" : 30,
+			"comments" : [ ]
+		},
+		{
+			"url" : "roberto-nickson-_qTXA_VT7Kg-unsplash.jpg",
+			"title" : "building night",
+			"description" : "nice building in the night",
+			"category" : "architecture",
+			"price" : 0,
+			"likes" : 10,
+			"comments" : [ ]
+		},
+		{
+			"url" : "rowan-chestnut-m663zRzRe40-unsplash.jpg",
+			"title" : "lady",
+			"description" : "lady with colorful flowers",
+			"category" : "portrait",
+			"price" : 0,
+			"likes" : 10,
+			"comments" : [ ]
+		}
+	]
+},

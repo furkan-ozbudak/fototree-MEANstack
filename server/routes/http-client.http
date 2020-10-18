@@ -1,0 +1,83 @@
+POST http://localhost:3000/fototree-api/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "fname": "Tibeb",
+      "lname": "Akeberegn",
+      "email": "fekaduw@mum.edu",
+      "password": "test",
+      "profile_picture": "http://drive.google.com/photos/1",
+      "payment_method": {
+          "card_type": "Master",
+    "number": "1234567890123456",
+    "secrete_no": "321",
+    "expiry_date": "04/21",
+    "name_on_the_card": "Hau Furkan Fekadu"
+      },
+      "uploaded_photos": [{  
+      "url":  "Desktop/photo1.jpg" ,
+      "category":  "personalCategory" ,
+      "title":  "photoTitle" ,
+      "description":  "Very nice photo" ,
+      "price":  "10" ,
+      "likes":  "100"  
+      }]
+}
+
+
+
+#####
+
+POST http://localhost:3000/fototree-api/signin HTTP/1.1
+Content-Type: application/json
+
+{
+      "email": "fekaduw@mum.edu",
+      "password": "test"
+}
+
+#####
+
+POST http://localhost:3000/fototree-api/cart/add HTTP/1.1
+Content-Type: application/json
+
+{
+      "userId":"fekaduw@mum.edu",
+    "url": "https://images.unsplash.com/photo-1561052630-15412ad90917?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "category": "Animals",
+      "title": "Wildlife in Vietnam",
+      "description": "test cart item2",
+      "price": 7
+}
+#### get cart items by user id
+
+GET http://localhost:3000/fototree-api/cart/get/ozbudakfurkan@gmail.com HTTP/1.1
+
+#### delete cart item by user id and cart item id
+DELETE http://localhost:3000/fototree-api/cart/delete/5d865a91f749410facbb699c/5d888d019870e078b9ce99d6 HTTP/1.1
+
+###
+POST http://localhost:3000/fototree-api/cart/checkout HTTP/1.1
+Content-Type: application/json
+
+            {
+            "userId":"fekaduw@mum.edu",
+            "photos":[{
+            "url": "https://images.unsplash.com/photo-1561052630-15412ad90917?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "category": "Animals",
+            "title": "Wildlife in Vietnam",
+            "description": "test cart item2",
+            "price": 7
+            },  {
+      "url":"https://images.unsplash.com/photo-1566624790190-511a09f6ddbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "category": "Beauty",
+      "title": "Wildlife in Vietnam",
+      "description": "test cart item2",
+      "price": 7
+      }
+  ]}
+
+
+####
+GET http://localhost:3000/fototree-api/photos HTTP/1.1
+

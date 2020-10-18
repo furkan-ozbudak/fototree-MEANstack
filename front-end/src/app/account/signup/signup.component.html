@@ -1,0 +1,141 @@
+<mat-chip-list *ngIf="error">
+  <mat-chip color="primary">{{ error }}</mat-chip>
+</mat-chip-list>
+<div *ngIf="isLoading" style="text-align: center">
+  <app-loading-spinner></app-loading-spinner>
+</div>
+
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()" *ngIf="!isLoading">
+  <div class="form-container">
+    <mat-card class="signup-form">
+      <h3>Create account</h3>
+
+      <mat-form-field class="controls">
+        <input
+          matInput
+          type="text"
+          name="fname"
+          placeholder="First Name"
+          [formControl]="signupForm.get('fname')"
+      /></mat-form-field>
+
+      <mat-error *ngIf="signupForm.get('fname').hasError('invalid')"
+        >Error</mat-error
+      >
+
+      <mat-form-field class="controls">
+        <input
+          matInput
+          type="text"
+          name="lname"
+          placeholder="Last Name"
+          [formControl]="signupForm.get('lname')"
+      /></mat-form-field>
+
+      <mat-error *ngIf="signupForm.get('lname').hasError('invalid')"
+        >Error</mat-error
+      >
+
+      <mat-form-field class="controls">
+        <input
+          matInput
+          type="text"
+          name="email"
+          placeholder="Email"
+          [formControl]="signupForm.get('email')"
+      /></mat-form-field>
+
+      <div *ngIf="signupForm.get('email').hasError('invalid')">Error</div>
+      <mat-form-field class="controls">
+        <input
+          matInput
+          type="password"
+          name="password"
+          placeholder="Password"
+          [formControl]="signupForm.get('password')"
+        />
+      </mat-form-field>
+
+      <mat-error *ngIf="signupForm.get('password').hasError('invalid')"
+        >Error</mat-error
+      >
+
+      <!-- <app-file-upload></app-file-upload> -->
+      
+        <input [formControl]="signupForm.get('profilePic')" (change)="onFileSeclected($event)" accept="image/*" name="profilePic" type="file" class="ng-hide">
+     
+    
+      <mat-error *ngIf="signupForm.get('profilePic').hasError('invalid')">Error</mat-error>
+
+      <label id="radio-group-label">Payment method: </label>
+      <mat-radio-group formControlName="cardType">
+        <mat-radio-button *ngFor="let card of cardTypes" [value]="card">{{
+          card
+        }}</mat-radio-button>
+      </mat-radio-group>
+
+      <!-- <div *ngIf="signupForm.get('cardType').hasError('invalid')">Error</div> -->
+
+      <mat-form-field class="controls">
+        <input
+          matInput
+          type="text"
+          name="cardNumber"
+          placeholder="Card Number"
+          [formControl]="signupForm.get('cardNumber')"
+      /></mat-form-field>
+
+      <mat-error *ngIf="signupForm.get('cardNumber').hasError('invalid')"
+        >Error</mat-error
+      >
+
+      <mat-form-field class="controls">
+        <input
+          matInput
+          type="text"
+          name="secNumber"
+          placeholder="Secrete Number"
+          [formControl]="signupForm.get('secNumber')"
+      /></mat-form-field>
+
+      <mat-error *ngIf="signupForm.get('secNumber').hasError('invalid')"
+        >Error</mat-error
+      >
+
+      <mat-form-field class="controls">
+        <input
+          matInput
+          type="text"
+          name="expiryDate"
+          placeholder="Expiry Date"
+          [formControl]="signupForm.get('expiryDate')"
+      /></mat-form-field>
+
+      <mat-error *ngIf="signupForm.get('expiryDate').hasError('invalid')"
+        >Error</mat-error
+      >
+
+      <mat-form-field class="controls">
+        <input
+          matInput
+          type="text"
+          name="nameOnCard"
+          placeholder="Name on the card"
+          [formControl]="signupForm.get('nameOnCard')"
+      /></mat-form-field>
+
+      <mat-error *ngIf="signupForm.get('nameOnCard').hasError('invalid')"
+        >Error</mat-error
+      >
+
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="!signupForm.valid"
+      >
+        Sign Up
+      </button>
+    </mat-card>
+  </div>
+</form>

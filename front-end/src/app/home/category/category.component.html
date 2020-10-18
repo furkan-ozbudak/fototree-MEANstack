@@ -1,0 +1,5 @@
+<mat-grid-list cols="4" rowHeight="500px" gutterSize="30px">
+  <mat-grid-tile *ngFor="let photo of photos">
+    <app-category-list [photo]="photo"></app-category-list>
+  </mat-grid-tile>
+</mat-grid-list>

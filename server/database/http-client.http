@@ -1,0 +1,66 @@
+POST http://localhost:3000/fototree-api/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "fname": "Fekadu",
+      "lname": "Furkan",
+      "email": "hau@mum.edu",
+      "password": "test",
+      "profile_picture": "http://drive.google.com/photos/1",
+      "payment_method": {
+          "card_type": "Visa",
+    "number": "1234567890123456",
+    "secrete_no": "321",
+    "expiry_date": "04/21",
+    "name_on_the_card": "Hau Furkan Fekadu"
+      }
+}
+
+
+####
+
+POST http://localhost:3000/fototree-api/signin HTTP/1.1
+Content-Type: application/json
+
+{
+      "email": "fekaduw@mum.edu",
+      "password": "test"
+
+}
+
+##### New photo
+POST http://localhost:3000/fototree-api/photos HTTP/1.1
+Content-Type: application/json
+
+{"email":"hau@mum.edu",
+ "photo":     
+      {     "title": "Agiro456",
+            "category": "MUM",
+            "url":"https://images.unsplash.com/photo-1528302753-ce2518bddca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=987&q=80",
+            "description": "test test test test",
+            "price": 0,
+            "likes" : 2000,
+            "comments": [
+            {"comment": "great great","date":""},
+            {"comment": "great great","date":""}
+            ]
+      }
+}
+
+
+##### get photo by user id
+GET http://localhost:3000/fototree-api/photos HTTP/1.1
+Content-Type: application/json
+
+##### get photo by user id
+GET http://localhost:3000/fototree-api/photos/hau@mum.edu HTTP/1.1
+Content-Type: application/json
+
+
+
+
+
+
+####
+POST http://localhost:3000/fototree-api/upload HTTP/1.1
+Content-Type: multipart/form-data

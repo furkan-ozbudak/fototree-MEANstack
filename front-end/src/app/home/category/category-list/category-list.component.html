@@ -1,0 +1,22 @@
+<div class="category-card">
+  <div>
+    <img
+      mat-card-image
+      src="{{ photo.url }}"
+      class="photo"
+      alt="{{ photo.title }}"
+    />
+  </div>
+  <div class="photo-caption mat-body-1">{{ photo.category }}</div>
+  <div class="row">
+    <div class="left">
+      <span class="mat-body-1">{{ photo.likes }}</span> LIKES
+    </div>
+    <!-- <button mat-button class="btn-photo-info">
+      <span class="mat-body-1">32k</span> VIEWS
+    </button> -->
+    <button mat-stroked-button class="right" (click)="addToCart(photo)">
+      Add to cart
+    </button>
+  </div>
+</div>

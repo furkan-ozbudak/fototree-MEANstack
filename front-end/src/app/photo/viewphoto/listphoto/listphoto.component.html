@@ -1,0 +1,36 @@
+<div id="page-container">
+  <h2>View Photo</h2>
+  <div id="main-container">
+    <div id="content">
+      <mat-sidenav-container class="example-container">
+        <mat-sidenav-content class="sidenave-container">
+          <div style="height: 88vh;">
+            <!--begin card-->
+            <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{ fotosByEmail[0].fname }}</mat-card-title>
+                <mat-card-subtitle
+                  >{{ fotosByEmail[0].lname }}
+                </mat-card-subtitle>
+              </mat-card-header>
+
+              <mat-card-content>
+                <mat-grid-list cols="4" rowHeight="150px" gutterSize="30px">
+                  <mat-grid-tile
+                    *ngFor="let f of fotosByEmail[0].uploaded_photos"
+                  >
+                    <app-onephoto [photo]="f"></app-onephoto>
+                  </mat-grid-tile>
+                </mat-grid-list>
+              </mat-card-content>
+            </mat-card>
+
+            <!--end card -->
+            <router-outlet></router-outlet>
+          </div>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+  </div>
+</div>

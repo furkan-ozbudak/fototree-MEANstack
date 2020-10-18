@@ -1,0 +1,17 @@
+<div class="main-content-container">
+  <h3>Item(s) in cart</h3>
+  <button
+    mat-raised-button
+    class="checkout-button"
+    type="submit"
+    [routerLink]="['/checkout']"
+  >
+    Proceed to checkout
+  </button>
+  <div *ngFor="let item of cartItems">
+    <app-cart-item
+      [photo]="item"
+      (deletePhotoEmitter)="deletePhoto($event)"
+    ></app-cart-item>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="main-content-container">
+  <h1>Checkout # item(s)</h1>
+  <hr />
+  <div>
+    <h3>Order summary</h3>
+  </div>
+  <div class="row">
+    <div class="left"><h4>Item(s) subtotal:</h4></div>
+    <div class="right">
+      <h4>{{ getSubTotal() | currency }}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="left"><h4>Total before tax:</h4></div>
+    <div class="right">
+      <h4>{{ getSubTotal() | currency }}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="left"><h4>Estimated tax to be collected:</h4></div>
+    <div class="right">
+      <h4>{{ getTax() | currency }}</h4>
+    </div>
+  </div>
+  <div class="row total">
+    <div class="left"><h3>Grand total:</h3></div>
+    <div class="right">
+      <h3>{{ getOrderTotal() | currency }}</h3>
+    </div>
+  </div>
+  <div>
+    <button
+      class="checkout-btn"
+      mat-raised-button
+      type="submit"
+      (click)="addBoughtPhotos()"
+    >
+      Checkout
+    </button>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<p>onephoto works!</p>
+<div class="category-card">
+  <a (click)="onPhotoClick()">
+    <img
+      mat-card-image
+      src="{{ photo.url }}"
+      class="photo"
+      alt="{{ photo.title }} : {{ photo.category }}"
+  /></a>
+  <div>
+    <mat-card-actions>
+      <a (click)="onPhotoClick()" [routerLink]="['photodetail']">view</a>
+
+          <app-photodetail [photo]="photo"></app-photodetail>
+      <button mat-button>Delete</button>
+    </mat-card-actions>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="search-form-container">
+  <form [formGroup]="searchForm" class="search-form">
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Search photos..."
+        type="text"
+        name="searchTerm"
+        [formControl]="searchForm.get('searchTerm')"
+      />
+    </mat-form-field>
+    <div *ngIf="searchForm.get('searchTerm').hasError('invalid')">Error</div>
+    <button mat-raised-button color="accent" type="submit">Search</button>
+  </form>
+</div>

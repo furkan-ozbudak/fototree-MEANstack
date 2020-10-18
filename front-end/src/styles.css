@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #000;
+  color: #757575;
+}
+
+.controls {
+  width: 100%;
+}
+
+header {
+}
+
+.mat-toolbar {
+  background: #253238;
+}
+.logo {
+  /* padding-top: 15px; */
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.logo-foto {
+  color: white;
+}
+
+.logo-tree {
+  color: #e35a76;
+}
+
+.top-menu {
+  align-content: flex-end;
+}
+
+.mat-stroked-button {
+  color: #fff;
+}
+.btn-photo-info:hover {
+  background: #e35a76;
+  color: #fff;
+}
+
+.main-content-container {
+  width: 80%;
+  margin: auto;
+}
+
+.cart-img img {
+  width: 200px;
+  height: 250px;
+}
+
+.cart-item-container {
+  display: flex;
+  border: 1px solid #e35a76;
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+}
+
+.cart-item-detail {
+  flex: 0 0 65%;
+  padding: 15px;
+}
+
+.cart-item-price {
+  flex: 1;
+  padding: 15px;
+}
+
+.mat-form-field-infix,
+.mat-form-field-wrapper {
+  background: #aeb6c5;
+}

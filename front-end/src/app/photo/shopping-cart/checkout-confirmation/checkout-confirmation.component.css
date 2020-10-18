@@ -1,0 +1,11 @@
+.confirmation-container {
+  width: 50%;
+  margin: 200px auto;
+  border: 1px solid;
+  padding: 25px;
+  text-align: center;
+}
+
+a {
+  color: #bbb;
+}

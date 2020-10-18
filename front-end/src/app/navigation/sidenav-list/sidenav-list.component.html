@@ -1,0 +1,37 @@
+<mat-toolbar>
+  <h1>
+    <span class="logo logo-foto">Foto</span
+    ><span class="logo logo-tree">Tree</span>
+  </h1>
+  <span class="menu-spacer"></span>
+
+  <!-- Let menu link -->
+  <div class="top-menu">
+    <a mat-button [routerLink]="['home']"> Home </a>
+    <a mat-button> About Us </a>
+    <!-- <a mat-button> Contact Us </a> -->
+    <a mat-button [routerLink]="['postphoto']" *ngIf="loggedIn">
+      Upload Photo
+    </a>
+    <a mat-button [routerLink]="['viewphoto']" *ngIf="loggedIn"> View Photo </a>
+    <a mat-button [routerLink]="['photo_details']" *ngIf="loggedIn"
+      >Photo Details</a
+    >
+  </div>
+  <span class="fill-space"></span>
+
+  <!-- the right menu links -->
+  <div class="top-menu">
+    <a mat-button [routerLink]="['/cart']" *ngIf="loggedIn">
+      <mat-icon matBadge="15" matBadgeColor="warn" matBadgePosition="before"
+        >shopping_cart</mat-icon
+      >
+      Cart <span *ngIf="totalItems > 0">({{ totalItems }})</span></a
+    >
+    <a mat-button [routerLink]="['/signup']" *ngIf="!loggedIn">
+      Create Account
+    </a>
+    <a mat-button [routerLink]="['/signin']" *ngIf="!loggedIn"> Login </a>
+    <a mat-button (click)="logout()" *ngIf="loggedIn"> Log Out</a>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,63 @@
+<div class="upload_photo_container">
+  <h3>Post Photo here...</h3>
+
+  <div class="example-container">
+    <form
+      [formGroup]="postPhotoForm"
+      class="example-form"
+      (ngSubmit)="onSubmit(f)"
+    >
+      <mat-card class="form-container">
+        <mat-form-field>
+          <input
+            matInput
+            required
+            name="title"
+            placeholder="Title"
+            [formControl]="postPhotoForm.get('title')"
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Photo Category</mat-label>
+          <mat-select [formControl]="postPhotoForm.get('category')">
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let cat of cats" [(value)]="cat">
+              {{ cat }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <input
+          [formControl]="postPhotoForm.get('filename')"
+          (change)="onFileSeclected($event)"
+          accept="image/*"
+          name="filename"
+          type="file"
+          class="ng-hide"
+        />
+
+        <mat-form-field>
+          <textarea
+            matInput
+            required
+            name="desc"
+            placeholder="Description"
+            [formControl]="postPhotoForm.get('desc')"
+          ></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <input
+            matInput
+            type="number"
+            required
+            name="price"
+            placeholder="Price"
+            [formControl]="postPhotoForm.get('price')"
+          />
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button>Submit</button>
+      </mat-card>
+    </form>
+  </div>
+</div>

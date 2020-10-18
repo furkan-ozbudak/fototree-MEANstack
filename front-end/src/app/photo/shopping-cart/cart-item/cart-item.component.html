@@ -1,0 +1,14 @@
+<div class="cart-item-container">
+  <div class="cart-img">
+    <img src="{{ photo.url }}" alt="" />
+  </div>
+  <div class="cart-item-detail">
+    <h3>{{ photo.title }}</h3>
+    <p>Author</p>
+    <p>{{ photo.description }}</p>
+    <button mat-raised-button (click)="deletePhoto(photo._id)">Delete</button>
+  </div>
+  <div class="cart-item-price">
+    <h1>{{ photo.price | currency }}</h1>
+  </div>
+</div>

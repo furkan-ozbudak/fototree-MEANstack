@@ -1,0 +1,28 @@
+.main-container {
+  border: 1px solid #243238;
+  width: 80%;
+  margin: 50px auto;
+  padding: 35px;
+
+  display: flex;
+}
+
+.left {
+  flex: 0 0 35%;
+}
+
+.right {
+  flex: 0 0 65%;
+  width: 100%;
+}
+
+.left img {
+  width: 350px;
+}
+
+mat-form-field.comment-textarea,
+mat-form-field-wrapper {
+  background: #243238;
+  width: 100%;
+  margin: 25px auto;
+}
